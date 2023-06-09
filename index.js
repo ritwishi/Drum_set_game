@@ -18,6 +18,28 @@ for(var i=0;i<numberOfButton;i++)
 
 //Detecting keyword press
 
+/*
+   function anotherAddEventListener(typeOfEvent,callBack){
+
+    var eventThatHappened = {
+        eventType:"keydown",
+        key:"p",
+        durationofKeypress:2
+    }
+
+    if (eventThatHappened.eventType === typeOfEvent){
+
+        callBack(eventThatHappened);
+    }
+    
+}
+
+  anotherAddEventListener("keydown" , function(event){
+    console.log(event);
+  });
+
+*/
+
 document.addEventListener("keydown",function(event){
 
     makeSound(event.key);
